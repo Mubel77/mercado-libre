@@ -1,0 +1,31 @@
+:root{
+    --color-amarillo: #EAC926;
+    --color-azul:#03264C;
+    --color-celeste:#1259c3;
+    --color-gris-oscuro:#666;
+    --color-gris-claro:#ebebeb;
+    --color-Verde: #39b54a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family:"roboto", sans-serif;
+    color: #000;
+}
+a {
+    color: black;
+    cursor: pointer;
+}
+body{
+    font-family: roboto, sans-serif;
+    font-weight: 300;
+
+}
+h2 {
+    font-size: 20px;
+
+}
