@@ -4,34 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/02c71d156f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/general.css">
     <title>Mercado Libre</title>
 </head>
-<header>
-    <img src="/img/images/logo-mercado-liebre.svg" alt="imagen de Mercado Libre" width="100%">    
-    <section>
-        <article>
-            <h2>Lugar para poner la barra de búsqueda</h2>
-            <h2>Comprá en cuotas y sin tarjeta de crédito</h2>
-        </article>
-        <article>
-            <nav>
-                <ul>
-                    <li><a href="/ofertas">Ofertas</a></li>
-                    <li><a href="/tiendas-oficiales">Tiendas Oficiales</a></li>
-                    <li><a href="/vender">vender</a></li>
-                    <li><a href="/ayuda">ayuda</a></li>
-                </ul>
-                <ul>
-                    <li><a href="/crea-tu-cuenta">Crea tu cuenta</a></li>
-                    <li><a href="/ingresar">Ingresar</a></li>
-                    <li><a href="/Mi-compra">Mi compra</a></li>
-                </ul>
-            </nav>
-        </article>
-    </section>
-</header>
-
-<body>
+<body>  
+  <header class="home_background">
+       <section >
+           <img class="home_img" src="/img/images/logo-mercado-liebre.svg" alt="imagen de Mercado Libre"> 
+         <article>
+              <form action="">
+                 <input class="home_input" type="text" placeholder="Buscar" id="search">
+                 <i class="fa-solid fa-magnifying-glass"></i>
+              </form>
+              
+               <h2 class="home_h2"><span> <i class="fa-solid fa-hand-holding-dollar"></i></span>Comprá en cuotas y sin tarjeta de crédito</h2>
+          </article>
+          <article>
+              <nav class="home_nav">
+                 <ul>
+                     <li><a href="/ofertas">Ofertas</a></li>
+                     <li><a href="/tiendas-oficiales">Tiendas Oficiales</a></li>
+                     <li><a href="/vender">vender</a></li>
+                     <li><a href="/ayuda">ayuda</a></li>
+                 </ul>
+                   <ul>
+                     <li><a href="/crea-tu-cuenta">Crea tu cuenta<span><i class="fa-regular fa-id-card"></i></span></a></li>
+                     <li><a href="/ingresar">Ingresar<span><i class="fa-solid fa-right-to-bracket"></i></span></a></li>
+                     <li><a href="/Mi-compra">Mi compra<span><i class="fa-solid fa-basket-shopping"></i></span> </a></li>
+                   </ul>
+             </nav>
+         </article>
+         <button class="burger-menu">
+            <i class="fas fa-bars"></i></button>
+        
+     </section>
+  </header>
     <img src="/img/images/img-home-banner.jpg" alt="imagen" width="100%">
     <section>
         <article>
@@ -57,6 +67,7 @@
             <h4>$23.200<br>5% OFF<br> SmartTv Samsung 43"</h4>
         </article>
     </section>
+</body>
     <footer>
         <section>
             <article>
@@ -71,8 +82,7 @@
                     porque estás siempre protegid@.</p>
                 <h3>Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>
             </article>
-        </section>
+     </section>
     </footer>
-</body>
 
 </html>

@@ -1,0 +1,32 @@
+.home_img {
+   width:60%;
+   margin: 30px 0px 10px 30px;
+}
+.home_background {
+    background: var(--color-amarillo);
+}
+.home_input {
+    width:60%;
+    margin: 10px 0px 10px 30px;
+}
+.home_h2 {
+    font-size: 12px;
+    text-align: center;
+
+}
+.home_nav {
+    font-size: 12px;
+    margin: ;
+}
+footer{
+    margin-top: 50px;
+}
+footer section article {
+    text-align: center;
+    margin: 20px 0px  ;
+}
+footer section article i {
+    font-size: 2em;
+    margin: 10px 0px;
+    color : var (--color-celeste);
+}
