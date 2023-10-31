@@ -1,31 +1,35 @@
 .home_img {
-   width:60%;
+   width:40%;
    margin: 30px 0px 10px 30px;
 }
 .home_background {
     background: var(--color-amarillo);
     height: 100%;
-    position: relative;
+    width: 100%;
+}
+.header_top_principal{
+    display: flex;
+    justify-content: space-between;
 }
 .home_input {
     width:60%;
-    margin: 10px 0px 10px 30px;
+    height: 30px;
+    margin: 30px 0px 0px 10px;
 }
 .home_h3 {
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
-
+    margin: 10px;
 }
 .home_nav {
-    font-size: 12px;
-    margin:10px 0px ;
+    font-size: 16px;
+    display: none;
+    padding: 27px;
 }
 .home_nav_2{
     margin-top: 20px ;
 }
-footer{
-    margin-top: 50px;
-}
+
 footer section article span i {
     color: var(--color-celeste);
     font-size: 2em;
@@ -35,39 +39,36 @@ footer section article {
     text-align: center;
     margin: 20px 0px  ;
 }
-.button_color {
+.hamburger_button {
     background-color: var(--color-azul);
-    border-radius: 10px;
-    font-size: 30px;
-    max-width: 10%; 
-    margin: 10px;
-}
-.button_color_icons {
-    color: #fff;
-  }
-  .button_div {
-    margin:auto; /* 10px arriba y abajo, centrado horizontal */
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 10px 0px;
+    border-radius: 8px;
     text-align: center;
-}
+    font-size: 18px;
+    margin: auto;
+  }
 footer article p {
     font-size: 12px;
     margin-bottom: 40px;
 }
 main {
     background-color: var(--color-gris-claro);
-   
 }
 main section article {
     background-color: #fff;
-    margin: 10px 10px;
+    margin: 10px 10px 0px 10px;
 }
 footer {
    border: 10px var(--color-gris-claro) solid;
 }
 main img {
-    width:100%;
-    border: 1px var(--color-gris-oscuro) solid;
+    width: 100%;
+    border-bottom: 5px var(--color-gris-claro) solid;
 }
+    
 main h2 {
     font-size: 24px;
     color: var(--color-gris-oscuro);
@@ -79,18 +80,137 @@ body {
 main h4 {
     font-size: 18px;
     color: black;
-    margin: 5px;
+    padding-left: 5px;
+  
 }
 .h5_name_green{
     font-size: 16px;
     color: var(--color-Verde);
-    margin: 5px;
+   padding-left: 5px;
+    
 }
 .h5_name {
     font-size: 16px;
     color: black;
-    margin: 5px;
+    padding: 5px;
+    display: none;
 }
-.center_h {
-    text-align: center;
+main section article div i {
+    color: var(--color-Verde);
+    border: 2px solid var(--color-Verde);
+    border-radius: 50%; 
+    padding: 20px;
+    margin: 10px 0px 0px 10px;
 }
+ @media  (min-width: 768px){
+    .header_top_principal { 
+        display: flex;
+        justify-content: space-between;
+    }
+     .main_header_top{
+        display: flex;
+        justify-content: space-between;
+    }
+    .home_input {
+        width: 84%;
+        height: 26%;
+        margin-top: 60px;
+    }
+    .home_img {
+        width: 52%;
+        height: 79%;
+    }
+    .home_h3 {
+        width: 28%;
+        height: 70%;
+        margin-top: 60px;
+        font-size: 18px;
+        text-align: right;
+    }
+     .hamburger_button {
+        display: none;
+     }
+    .home_nav {
+       display: flex;
+       justify-content: space-between;
+    }
+     .home_nav ul {
+        display: flex;
+     }
+     .home_nav li {
+        margin: 0px 10px;
+     }
+      .home_nav_2{
+        margin-top: 0px ;
+    }
+     .home_nav_2 i {
+        margin-left: 2px;
+        font-size: 17px;
+     }
+     .h5_name {
+        font-size: 20px;
+        color: black;
+        padding: 5px;
+        display: block;
+        margin-top: 10px;
+    }
+    .h5_name_green {
+        font-size: 20px;
+        color: var(--color-Verde);
+        padding-left: 5px;
+    }
+    main h4 {
+        font-size: 24px;
+        color: black;
+        padding-left: 5px;
+    }
+     .fa-truck:before {
+    content: "\f0d1";
+    font-size: 25px;
+    }
+    .caja {
+        margin-left: 20px;
+       
+    }
+    .center_h {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+ };
+
+ @media  (min-width: 1024px){
+   .header_top_principal { 
+        display: flex;
+        justify-content: space-between
+    }
+
+     .h5_name {
+        font-size: 20px;
+        color: black;
+        padding: 5px;
+        display: block;
+        margin-top: 10px;
+    }
+    .h5_name_green {
+        font-size: 20px;
+        color: var(--color-Verde);
+        padding-left: 5px;
+    }
+    main h4 {
+        font-size: 24px;
+        color: black;
+        padding-left: 5px;
+    }
+     .fa-truck:before {
+    content: "\f0d1";
+    font-size: 25px;
+    }
+    .caja {
+        margin-left: 20px;
+    }
+    .center_h {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+ };
+
+
