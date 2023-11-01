@@ -2,19 +2,19 @@
    width:40%;
    margin: 30px 0px 10px 30px;
 }
+.padding {
+    padding-bottom: 10px;
+}
 .home_background {
     background: var(--color-amarillo);
     height: 100%;
     width: 100%;
 }
-.header_top_principal{
-    display: flex;
-    justify-content: space-between;
-}
+
 .home_input {
-    width:60%;
+    width: 60%;
     height: 30px;
-    margin: 30px 0px 0px 10px;
+    margin: 0px 0px 0px 27px;
 }
 .home_h3 {
     font-size: 15px;
@@ -44,10 +44,10 @@ footer section article {
     color: #ffffff;
     display: block;
     max-width: 50px;
-    padding: 10px 0px;
+    padding: 8px 0px;
     border-radius: 8px;
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
     margin: auto;
   }
 footer article p {
@@ -112,18 +112,18 @@ main section article div i {
         justify-content: space-between;
     }
     .home_input {
-        width: 84%;
+        width: 70%;
         height: 26%;
         margin-top: 60px;
     }
     .home_img {
-        width: 52%;
+        width: 30%;
         height: 79%;
     }
     .home_h3 {
         width: 28%;
         height: 70%;
-        margin-top: 60px;
+        margin: 60px 35px 0px 0px;
         font-size: 18px;
         text-align: right;
     }
@@ -176,15 +176,35 @@ main section article div i {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
- };
+};
 
- @media  (min-width: 1024px){
-   .header_top_principal { 
+@media (max-width: 1024px) {
+    .header_top_principal { 
         display: flex;
-        justify-content: space-between
+        justify-content: space-between;
+    }
+    .main_header_top {
+        display: flex;
+        justify-content: space-between;
+    }
+    .home_img {
+        width: 30%;
+        height: 79%;
+    }
+    .home_input {
+        width: 80%;
+        height: 26%;
+        margin-top: 60px;
+    }
+    .home_h3 {
+        width: 25%;
+        height: 75%;
+        margin-top: 60px;
+        font-size: 20px;
+        text-align: right;
     }
 
-     .h5_name {
+    .h5_name {
         font-size: 20px;
         color: black;
         padding: 5px;
@@ -201,9 +221,9 @@ main section article div i {
         color: black;
         padding-left: 5px;
     }
-     .fa-truck:before {
-    content: "\f0d1";
-    font-size: 25px;
+    .fa-truck:before {
+        content: "\f0d1";
+        font-size: 25px;
     }
     .caja {
         margin-left: 20px;
@@ -211,6 +231,4 @@ main section article div i {
     .center_h {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
- };
-
-
+}
