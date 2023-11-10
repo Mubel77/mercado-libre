@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/02c71d156f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/ingresar.css">
     <link rel="stylesheet" href="/css/general.css">
     <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <title>Mercado Libre</title>
 </head>
 
@@ -20,8 +21,7 @@
                     <div class="header_mobile">
                         <img class="home_img" src="/img/images/logo-mercado-liebre.svg" alt="imagen de Mercado Libre">
                         <form class="buscador" action="">
-                            <input class="home_input" type="text" placeholder="Buscar" id="search">
-                            <i class="fa-solid fa-magnifying-glass lupa"></i>
+                            <input class="home_input" type="text" placeholder="Buscar" id="search" ><i class="fa-solid fa-magnifying-glass lupa"></i>
                         </form>
                     </div>
                     <h3 class="home_h3"><span> <i class="fa-solid fa-hand-holding-dollar"></i></span>Comprá en cuotas y
@@ -42,7 +42,7 @@
                         <li><a href="/ayuda">ayuda</a></li>
                     </ul>
                     <ul class="home_nav_2">
-                        <li><a href="/crea-tu-cuenta">Crea tu cuenta<span><i
+                        <li><a href="/registro">Crea tu cuenta<span><i
                                         class="fa-regular fa-id-card"></i></span></a></li>
                         <li><a href="/ingresar">Ingresar<span><i class="fa-solid fa-right-to-bracket"></i></span></a>
                         </li>
@@ -53,42 +53,19 @@
             </article>
         </section>
     </header>
-    <form action="/crea-tu-cuenta" method="post" class="formulario">
+    <form action="/ingresar" method="post" class="ingreso_de_usuario_formulario">
         <div>
-            <label  class="input">Nombre del producto:</label>
-            <input type="text" name="nombre">
+            <label>Nombre de usuari@:</label>
+            <input type="text" name="usuario" placeholder="Nombre de usuari@" required>
         </div>
         <div>
-            <label>precio:</label>
-            <input type="text" name="precio" placeholder="123.56">
+            <label class="input">Contraseña:</label>
+            <input type="password" name="contraseña" placeholder="Elegi tu contraseña" required>
         </div>
-        <article>
-            <label>categoria:</label>
-            <select name="categoria" >
-                <option value="hoar">hogar</option>
-                <option value="electro">Electro</option>
-                <option value="indumentaria">Indumentaria</option>
-            </select>
-        </article>
-        <article>
-            <label>Ciudad:</label>
-            <select name="Ciudad">
-                <option value="Bs As">Buenos Aires</option>
-                <option value="Rosario">Rosario</option>
-                <option value="Cordoba">Cordaba</option>
-            </select>
-        </article>
-        <section>
-            <label>Descripcion:</label>
-            <textarea name="descripcion" ></textarea>
-        </section>
-        <div>
-            <label>Esta en oferta:</label>
-            <input type="radio" name="en oferta">
-        </div>
-        <button type="submit">Guardar</button>
-        <button type="reset">Borrar</button>
-    </form>
+            <div>
+                <a href="http://localhost:3300"> <button type="submit" class="boton_formulario">Enviar</button></a>
+           </div>
+    </form>    
     <main>
         <img src="/img/images/img-home-banner.jpg" alt="imagen">
         <h2>Basado en tu última visita</h2>
@@ -96,7 +73,7 @@
             <div class="caja_img_1">
                 <article class="center_h border">
                     <img src="/img/images/img-cafetera-moulinex.jpg" alt="imagen de cafetera" width="100%">
-                    <i class="fa-solid fa-truck"></i>
+                    <i class="fa-solid {fa}-truck"></i>
                     <div class="caja">
                         <p class="precio">$6.770</p>
                         <p class="orfertas_green">40% OFF</p>

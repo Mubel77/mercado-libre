@@ -1,0 +1,19 @@
+
+
+footer section article span i {
+    color: var(--color-celeste);
+    font-size: 2em;
+    margin: 10px;
+}
+footer section article {
+    text-align: center;
+    margin: 20px 0px  ;
+}
+
+footer article p {
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+footer {
+    border: 10px var(--color-gris-claro) solid;
+ }
