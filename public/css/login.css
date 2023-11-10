@@ -1,0 +1,98 @@
+main  {
+    display: none;
+}
+.login_formulario {
+    background-color: var(--color-gris-claro);
+    padding: 10px 20px;
+}
+form div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    width: 100%;
+    height: 30px;
+    padding: 0px 5px;
+}
+.titulares {
+    margin: 10px 0;
+    font-size: 143%;
+    font-weight: bold;
+    text-align: center;
+}
+.usuario {
+    display: flex;
+    flex-direction: row-reverse; /* Invierte el orden de los elementos en la dirección horizontal */
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.intereses {
+    display: flex;
+    flex-direction: column; /* Puedes usar flex-start, center, flex-end, space-between, o space-around */
+}
+.invertir {
+    display: flex;
+    flex-direction: row;
+}
+section article div input {
+    margin-right: 20px;
+}
+.boton_formulario {
+    background-color: var(--color-celeste);
+    color: #ffffff;
+    width: 100%;
+    font-size: 100%;
+    text-align: center;
+}
+@media  (min-width: 768px){
+    .input {
+        width: 100%;
+        height: 40px;
+        padding: 0px 5px;
+    }
+     .usuario  input {
+        width: 4%;
+        margin: 0px 10px;
+     }
+     .comprador {
+       margin: 11px 159px 0px 0px;
+       font-size: 16px;
+     }
+    .vendedor {
+        font-size: 16px;
+        margin: 10px 122px 10px 10px;
+    }
+    .boton_formulario {
+        background-color: var(--color-celeste);
+        color: #ffffff;
+        width: 100%;
+        font-size: 26px;
+        text-align: center;
+    }
+    .foto {
+        font-size: 20px;
+    }
+    .intereses {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0px;
+    }
+     }
+     @media (min-width: 1024px){
+        .input {
+            width: 100%;
+            height: 50px;
+            padding: 0px 5px;
+        }
+        .boton_formulario {
+            background-color: var(--color-celeste);
+            color: #ffffff;
+            width: 100%;
+            font-size: 35px;
+            text-align: center;
+        }
+
+     }
+

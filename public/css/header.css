@@ -1,0 +1,122 @@
+.header_mobile {
+    display: flex;
+}
+.home_input {
+    width: 48%;
+    height: 33px;
+    margin: 29px 0px 0px 35px;
+}
+.home_img {
+    width: 33%;
+    margin: 30px 0px 10px 52px;
+}
+.padding {
+    padding-bottom: 10px;
+}
+.home_background {
+    background: var(--color-amarillo);
+    height: 100%;
+    width: 100%;
+}
+
+.home_h3 {
+    font-size: 15px;
+    text-align: center;
+    margin: 10px;
+}
+.home_nav {
+    font-size: 16px;
+    display: none;
+    padding: 27px;
+}
+.home_nav_2{
+    margin-top: 20px ;
+}
+.hamburger_button {
+    background-color: var(--color-azul);
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 8px 0px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 15px;
+    margin: auto;
+  }
+  body {
+    border: 1px var(--color-gris-claro) solid;
+}
+@media  (min-width: 768px){
+
+    .header_top_principal { 
+        display: flex;
+        justify-content: space-between;
+    }
+     .main_header_top{
+        display: flex;
+        justify-content: space-between;
+    }
+    .home_input {
+        width: 59%;
+        height: 25px;
+        margin: 54px 0px 0px 43px;
+    }  
+    .home_img {
+        width: 46%;
+        margin: 30px 0px 10px 52px;
+    }
+    .home_h3 {
+        width: 58%;
+        height: 49%;
+        margin: 60px 35px 0px 0px;
+        font-size: 16px;
+        text-align: right;
+    }
+     .hamburger_button {
+        display: none;
+     }
+    .home_nav {
+       display: flex;
+       justify-content: space-between;
+    }
+     .home_nav ul {
+        display: flex;
+     }
+     .home_nav li {
+        margin: 0px 10px;
+     }
+      .home_nav_2{
+        margin-top: 0px ;
+    }
+     .home_nav_2 i {
+        margin-left: 2px;
+        font-size: 17px;
+     }
+    }
+    @media (min-width: 1024px) {
+    .header_top_principal , .home_nav { 
+        max-width: 1024px;
+     }
+     .header_top_principal {
+         display: flex;
+     }
+     .home_img {
+         width: 45%;
+         margin: 30px 0px 10px 52px;
+     }
+     .home_input {
+         width: 61%;
+         height: 24%;
+         margin: 51px 0px 0px 81px;
+     }
+     .home_h3 {
+         width: auto;
+         height: 82%;
+         margin-top: 60px;
+         font-size: 16px;
+         text-align: right;
+     }
+     .home_nav {
+         font-size: 20px;
+     }
+    }
