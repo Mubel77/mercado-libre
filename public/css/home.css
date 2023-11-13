@@ -26,7 +26,7 @@
 }
 .home_nav {
     font-size: 16px;
-    display: none;
+    display: block;
     padding: 27px;
 }
 .home_nav_2{
@@ -85,7 +85,7 @@ body {
     font-size: 16px;
     color: black;
     margin: 20px 0px 20px 0px;
-    display: block;
+    display: none;
 }
 main section article i {
     color: var(--color-Verde);
@@ -106,8 +106,9 @@ main section article i {
     flex-wrap: wrap;
 
 }
-.caja{ 
+.caja {
     margin-left: 20px;
+    padding: 10px;
 }
 .caja p {
     display: inline-block;
@@ -124,6 +125,24 @@ main section article i {
    padding-left: 5px;
     
 }
+/* Estilo predeterminado sin sombra */
+.caja_img_1 article {
+    box-shadow: 0px 0px 0px rgb(100, 100, 100); /* Sin sombra inicialmente */
+}
+
+/* Efecto de sombra al pasar el ratón por encima */
+.caja_img_1 article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100); /* Ajusta los valores según sea necesario */
+}
+.fa-solid.fa-truck {
+    transition: transform 450ms ease; /* Agrega una transición suave para el efecto */
+}
+
+.fa-solid.fa-truck:hover {
+    transform: rotate(-90deg); /* Gira 90° hacia arriba al pasar el ratón por encima */
+}
+
+
  @media  (min-width: 768px){
     .header_top_principal { 
         display: flex;
