@@ -2,6 +2,9 @@ const express = require(`express`);
 const app = express();
 const path= require(`path`);
 const port = 3300;
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 app.get("/", (req,res) =>{
     res.sendFile(path.join(__dirname,"/views/home.html"))
@@ -21,12 +24,20 @@ app.get("/ayuda", (req,res) => {
     res.sendFile(path.join(__dirname, "/views/ayuda.html"));
 });
 
-app.get("/crea-tu-cuenta", (req,res) => {
-    res.sendFile(path.join(__dirname, "/views/crea-tu-cuenta.html"));
+app.get("/registro", (req,res) => {
+    res.sendFile(path.join(__dirname, "/views/register.html"));
+});
+app.post("/registro", (req,res) => {
+    console.log (req.body);
+    res.redirect("/");
+});
+app.get("/ingresar", (req,res) => {
+    res.sendFile(path.join(__dirname, "/views/login.html"));
 });
 
-app.get("/ingresar", (req,res) => {
-    res.sendFile(path.join(__dirname, "/views/ingresar.html"));
+app.post("/ingresar", (req,res) => {
+    console.log (req.body);
+    res.redirect("/");
 });
 
 app.get("/Mi-compra", (req,res) => {

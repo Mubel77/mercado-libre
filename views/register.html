@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/02c71d156f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/login.css">
     <link rel="stylesheet" href="/css/general.css">
     <link rel="stylesheet" href="/css/header.css">
-    <title>Mercado Libre</title>
+    <link rel="stylesheet" href="/css/footer.css">
+    <title>Crea tu Cuenta</title>
 </head>
 
 <body>
@@ -42,7 +43,7 @@
                         <li><a href="/ayuda">ayuda</a></li>
                     </ul>
                     <ul class="home_nav_2">
-                        <li><a href="/crea-tu-cuenta">Crea tu cuenta<span><i
+                        <li><a href="/registro">Crea tu cuenta<span><i
                                         class="fa-regular fa-id-card"></i></span></a></li>
                         <li><a href="/ingresar">Ingresar<span><i class="fa-solid fa-right-to-bracket"></i></span></a>
                         </li>
@@ -53,42 +54,78 @@
             </article>
         </section>
     </header>
-    <form action="/crea-tu-cuenta" method="post" class="formulario">
-        <div>
-            <label  class="input">Nombre del producto:</label>
-            <input type="text" name="nombre">
-        </div>
-        <div>
-            <label>precio:</label>
-            <input type="text" name="precio" placeholder="123.56">
-        </div>
-        <article>
-            <label>categoria:</label>
-            <select name="categoria" >
-                <option value="hoar">hogar</option>
-                <option value="electro">Electro</option>
-                <option value="indumentaria">Indumentaria</option>
-            </select>
-        </article>
-        <article>
-            <label>Ciudad:</label>
-            <select name="Ciudad">
-                <option value="Bs As">Buenos Aires</option>
-                <option value="Rosario">Rosario</option>
-                <option value="Cordoba">Cordaba</option>
-            </select>
-        </article>
-        <section>
-            <label>Descripcion:</label>
-            <textarea name="descripcion" ></textarea>
-        </section>
-        <div>
-            <label>Esta en oferta:</label>
-            <input type="radio" name="en oferta">
-        </div>
-        <button type="submit">Guardar</button>
-        <button type="reset">Borrar</button>
-    </form>
+    <form action="/registro" method="post" class="login_formulario">
+            <div>
+                <label  class="titulares">Nombre y apellido:</label>
+                <input class="input"  type="text" name="nombre y appellido" placeholder="Nombre y apellido"required>
+            </div>
+            <div>
+                <label  class="titulares">Nombre de usuari@:</label>
+                <input class="input"  type="text" name="usuario" placeholder="Nombre de usuari@"required>
+            </div>
+            <div>
+                <label class="titulares">Email:</label>
+                <input  class="input" type="email" name="Email" placeholder="E-mail"required>
+            </div>
+            <div>
+                <label class="titulares">Fecha de nacimiento:</label>
+                <input class="input"  type="date" name="Fecha" value="mm-dd-yyyy" min="1970-01-01" max="2007-01-01">
+            </div>
+            <div>
+                <label class="titulares">Domicilio:</label>
+                <input class="input" type="text" name="Domicilio" placeholder="Domicilio">
+            </div>
+            <section >
+                <label class="titulares">Perfil del usuario:</label>
+                    <article class="usuario">
+                         <label class="comprador">Comprador</label> <input type="radio" name="perfil" value="comprador">
+                        <label class="vendedor">Vendedor</label><input type="radio" name="perfil"   value="vendedor">
+                    </article>
+            </section>
+            <section>
+                <label class="titulares">Intereses:</label>
+                    <article class="intereses">
+                        <div class="invertir">
+                            <input type="checkbox" name="intereses" value="Electro">
+                            <label>Electro</label>
+                        </div> 
+                        <div class="invertir">
+                            <input type="checkbox" name="intereses" value="Moda"> 
+                            <label>Moda</label>
+                        </div>
+                        <div class="invertir">
+                            <input type="checkbox" name="intereses" value="Hogar">
+                            <label>Hogar</label>
+                        </div>
+                        <div class="invertir">
+                            <input type="checkbox" name="intereses" value="Juguetería">
+                            <label>Juguetería</label>
+                        </div>
+                        <div class="invertir">
+                            <input type="checkbox" name="intereses" value="Vida sana">
+                            <label>Vida sana</label>
+                        </div>
+                    </article>
+            </section>
+                    <div>
+                        <label class="titulares">Foto de usuario:</label>
+                        <input class="foto" type="file" name="avatar" accept=".jpg" multiple >
+                    </div>
+                    <div>
+                        <label class="titulares">Contraseña:</label>
+                        <input class="input"  type="password" name="clave" placeholder="contraseña" >
+                    </div>
+                    <div>
+                        <label class="titulares">Confirmar contraseña:</label>
+                        <input class="input"  type="password" name="confirmar clave" placeholder=" confirmar contraseña" >
+                    </div>  
+                    <div>
+                        <button type="submit" class="boton_formulario">Guardar</button> 
+                    </div>
+                    <div>    
+                        <button type="reset" class="boton_formulario">Borrar</button>
+                    </div>      
+     </form>
     <main>
         <img src="/img/images/img-home-banner.jpg" alt="imagen">
         <h2>Basado en tu última visita</h2>
