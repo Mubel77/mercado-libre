@@ -8,11 +8,10 @@
     width: 100%;
     font-size: 100%;
     text-align: center;
-    transition: background-color 450ms; /* Agrega una transición suave para el cambio de color de fondo */
-}
+    transition: background-color 450ms; 
 
 .boton_formulario:hover {
-    background-color: #0022AA; /* Cambia el color de fondo al pasar el ratón por encima */
+    background-color: #0022AA; /* Cambia el color de fondo */
 }
 form div label {
     display: none;
