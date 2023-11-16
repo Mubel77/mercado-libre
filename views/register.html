@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/02c71d156f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/register.css">
     <link rel="stylesheet" href="/css/general.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
@@ -43,8 +43,8 @@
                         <li><a href="/ayuda">ayuda</a></li>
                     </ul>
                     <ul class="home_nav_2">
-                        <li><a href="/registro">Crea tu cuenta<span><i
-                                        class="fa-regular fa-id-card"></i></span></a></li>
+                        <li><a href="/registro">Crea tu cuenta<span><i class="fa-regular fa-id-card"></i></span></a>
+                        </li>
                         <li><a href="/ingresar">Ingresar<span><i class="fa-solid fa-right-to-bracket"></i></span></a>
                         </li>
                         <li><a href="/Mi-compra">Mi compra<span><i class="fa-solid fa-basket-shopping"></i></span> </a>
@@ -54,166 +54,79 @@
             </article>
         </section>
     </header>
-    <form action="/registro" method="post" class="login_formulario">
+    <main>
+        <form action="/registro" method="post" class="login_formulario">
             <div>
-                <label  class="titulares">Nombre y apellido:</label>
-                <input class="input"  type="text" name="nombre y appellido" placeholder="Nombre y apellido"required>
+                <label class="titulares">Nombre y apellido:</label>
+                <input class="input" type="text" name="nombre y appellido" placeholder="Nombre y apellido" required>
             </div>
             <div>
-                <label  class="titulares">Nombre de usuari@:</label>
-                <input class="input"  type="text" name="usuario" placeholder="Nombre de usuari@"required>
+                <label class="titulares">Nombre de usuari@:</label>
+                <input class="input" type="text" name="usuario" placeholder="Nombre de usuari@" required>
             </div>
             <div>
                 <label class="titulares">Email:</label>
-                <input  class="input" type="email" name="Email" placeholder="E-mail"required>
+                <input class="input" type="email" name="Email" placeholder="E-mail" required>
             </div>
             <div>
                 <label class="titulares">Fecha de nacimiento:</label>
-                <input class="input"  type="date" name="Fecha" value="mm-dd-yyyy" min="1970-01-01" max="2007-01-01">
+                <input class="input" type="date" name="Fecha" value="mm-dd-yyyy" min="1970-01-01" max="2007-01-01">
             </div>
             <div>
                 <label class="titulares">Domicilio:</label>
                 <input class="input" type="text" name="Domicilio" placeholder="Domicilio">
             </div>
-            <section >
+            <section>
                 <label class="titulares">Perfil del usuario:</label>
-                    <article class="usuario">
-                         <label class="comprador">Comprador</label> <input type="radio" name="perfil" value="comprador">
-                        <label class="vendedor">Vendedor</label><input type="radio" name="perfil"   value="vendedor">
-                    </article>
+                <article class="usuario">
+                    <label class="comprador">Comprador</label> <input type="radio" name="perfil" value="comprador">
+                    <label class="vendedor">Vendedor</label><input type="radio" name="perfil" value="vendedor">
+                </article>
             </section>
             <section>
                 <label class="titulares">Intereses:</label>
-                    <article class="intereses">
-                        <div class="invertir">
-                            <input type="checkbox" name="intereses" value="Electro">
-                            <label>Electro</label>
-                        </div> 
-                        <div class="invertir">
-                            <input type="checkbox" name="intereses" value="Moda"> 
-                            <label>Moda</label>
-                        </div>
-                        <div class="invertir">
-                            <input type="checkbox" name="intereses" value="Hogar">
-                            <label>Hogar</label>
-                        </div>
-                        <div class="invertir">
-                            <input type="checkbox" name="intereses" value="Juguetería">
-                            <label>Juguetería</label>
-                        </div>
-                        <div class="invertir">
-                            <input type="checkbox" name="intereses" value="Vida sana">
-                            <label>Vida sana</label>
-                        </div>
-                    </article>
+                <article class="intereses">
+                    <div class="invertir">
+                        <input type="checkbox" name="intereses" value="Electro">
+                        <label>Electro</label>
+                    </div>
+                    <div class="invertir">
+                        <input type="checkbox" name="intereses" value="Moda">
+                        <label>Moda</label>
+                    </div>
+                    <div class="invertir">
+                        <input type="checkbox" name="intereses" value="Hogar">
+                        <label>Hogar</label>
+                    </div>
+                    <div class="invertir">
+                        <input type="checkbox" name="intereses" value="Juguetería">
+                        <label>Juguetería</label>
+                    </div>
+                    <div class="invertir">
+                        <input type="checkbox" name="intereses" value="Vida sana">
+                        <label>Vida sana</label>
+                    </div>
+                </article>
             </section>
-                    <div>
-                        <label class="titulares">Foto de usuario:</label>
-                        <input class="foto" type="file" name="avatar" accept=".jpg" multiple >
-                    </div>
-                    <div>
-                        <label class="titulares">Contraseña:</label>
-                        <input class="input"  type="password" name="clave" placeholder="contraseña" >
-                    </div>
-                    <div>
-                        <label class="titulares">Confirmar contraseña:</label>
-                        <input class="input"  type="password" name="confirmar clave" placeholder=" confirmar contraseña" >
-                    </div>  
-                    <div>
-                        <button type="submit" class="boton_formulario">Guardar</button> 
-                    </div>
-                    <div>    
-                        <button type="reset" class="boton_formulario">Borrar</button>
-                    </div>      
-     </form>
-    <main>
-        <img src="/img/images/img-home-banner.jpg" alt="imagen">
-        <h2>Basado en tu última visita</h2>
-        <section>
-            <div class="caja_img_1">
-                <article class="center_h border">
-                    <img src="/img/images/img-cafetera-moulinex.jpg" alt="imagen de cafetera" width="100%">
-                    <i class="fa-solid fa-truck"></i>
-                    <div class="caja">
-                        <p class="precio">$6.770</p>
-                        <p class="orfertas_green">40% OFF</p>
-                        <h5 class="h5_name">Cafetera Moulinex</h5>
-                    </div>
-                </article>
-                <article class="center_h">
-                    <img src="/img/images/img-macbook-pro-2019.jpg" alt="imagen de MacBook" width="100%">
-                    <i class="fa-solid fa-truck"></i>
-                    <div class="caja">
-                        <p class="precio">$230.000</p>
-                        <p class="orfertas_green">20% off</p>
-                        <h5 class="h5_name">MacBook Pro 2019</h5>
-                    </div>
-                </article>
+            <div>
+                <label class="titulares">Foto de usuario:</label>
+                <input class="foto" type="file" name="avatar" accept=".jpg" multiple>
             </div>
-            <div class="caja_img_1">
-                <article class="center_h">
-                    <img src="/img/images/img-samsung-galaxy-s10.jpg" alt="imagen del Samsung Galaxy" width="100%">
-                    <i class="fa-solid fa-truck"></i>
-                    <div class="caja">
-                        <p class="precio">$70.500</p>
-                        <p class="orfertas_green">10% off</p>
-                        <h5 class="h5_name">Samsung Galaxy S10</h5>
-                    </div>
-                </article>
-                <article class="center_h">
-                    <img src="/img/images/img-tv-samsung-smart.jpg" alt="imagen del SmartTv" width="100%">
-                    <i class="fa-solid fa-truck"></i>
-                    <div class="caja">
-                        <p class="precio">$23.200</p>
-                        <p class="orfertas_green">5% OFF</p>
-                        <h5 class="h5_name">SmartTv Samsung 43"</h5>
-                    </div>
-                </article>
+            <div>
+                <label class="titulares">Contraseña:</label>
+                <input class="input" type="password" name="clave" placeholder="contraseña">
             </div>
-        </section>
-        <h2>Sección de Ofertas</h2>
-        <section>
-            <div class="caja_img_1">
-                <article class="center_h">
-                    <img src="/img/images/img-cafetera-moulinex.jpg" alt="imagen de cafetera" width="100%">
-                    <i class="fa-solid fa-truck"></i>
-                    <div class="caja">
-                        <p class="precio">$6.770</p>
-                        <p class="orfertas_green">40% OFF</p>
-                        <h5 class="h5_name">Cafetera Moulinex</h5>
-                    </div>
-                </article>
-                <article class="center_h">
-                    <img src="/img/images/img-macbook-pro-2019.jpg" alt="imagen de MacBook" width="100%">
-                    <i class="fa-solid fa-truck"></i>
-                    <div class="caja">
-                        <p class="precio">$230.000</p>
-                        <p class="orfertas_green">20% off</p>
-                        <h5 class="h5_name">MacBook Pro 2019</h5>
-                    </div>
-                </article>
+            <div>
+                <label class="titulares">Confirmar contraseña:</label>
+                <input class="input" type="password" name="confirmar clave" placeholder=" confirmar contraseña">
             </div>
-            <div class="caja_img_1">
-                <article class="center_h">
-                    <img src="/img/images/img-samsung-galaxy-s10.jpg" alt="imagen del Samsung Galaxy" width="100%">
-                    <i class="fa-solid fa-truck"></i>
-                    <div class="caja">
-                        <p class="precio">$70.500</p>
-                        <p class="orfertas_green">10% off</p>
-                        <h5 class="h5_name">Samsung Galaxy S10</h5>
-                    </div>
-                </article>
-                <article class="center_h">
-                    <img src="/img/images/img-tv-samsung-smart.jpg" alt="imagen del SmartTv" width="100%">
-                    <i class="fa-solid fa-truck"></i>
-                    <div class="caja">
-                        <p class="precio">$23.200</p>
-                        <p class="orfertas_green">5% OFF</p>
-                        <h5 class="h5_name">SmartTv Samsung 43"</h5>
-                    </div>
-                </article>
+            <div>
+                <button type="submit" class="boton_formulario">Guardar</button>
             </div>
-        </section>
+            <div>
+                <button type="reset" class="boton_formulario">Borrar</button>
+            </div>
+        </form>
     </main>
     <footer>
         <section>

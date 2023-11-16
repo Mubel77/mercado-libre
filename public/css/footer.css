@@ -1,5 +1,3 @@
-
-
 footer section article span i {
     color: var(--color-celeste);
     font-size: 2em;
@@ -7,13 +5,87 @@ footer section article span i {
 }
 footer section article {
     text-align: center;
-    margin: 20px 0px  ;
+    margin: 20px 0px;
 }
-
 footer article p {
     font-size: 12px;
     margin-bottom: 40px;
 }
 footer {
-    border: 10px var(--color-gris-claro) solid;
+   border-top: 10px var(--color-gris-claro) solid
  }
+
+ @media  (min-width: 768px){
+    footer section article span i {
+        color: var(--color-celeste);
+        font-size: 2em;
+        margin: 10px;
+    }
+    footer section article {
+        text-align: center;
+        margin: 20px 0px;
+    }
+    footer article p {
+        font-size: 12px;
+        margin-bottom: 40px;
+    }
+    footer {
+       border-top: 10px var(--color-gris-claro) solid
+     }
+ }
+
+ @media  (min-width: 1024px) {footer section article {
+    text-align: center;
+    margin: 20px 0px  ;
+    display: flex;
+    justify-content: space-around;
+}
+footer section article div {
+    display: flex;
+    flex-direction: column;
+}
+.div_caja_1{
+    width: 180%;
+    margin-left: 2px;
+}
+.div_caja_2 {
+    width: 192%;
+}
+.div_caja_3 {
+    width: 185%;
+    margin: 0px 7px 0px 3px;
+}
+.efecto:hover{
+    transition: box-shadow 450ms;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.footer_icons:hover {
+    transition: color 450ms;
+    color: var( --color-azul);
+}
+
+footer article p {
+    font-size: 10px;
+    margin-bottom: 40px;
+}    
+footer article h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+    footer section article span i {
+        color: var(--color-celeste);
+        font-size: 2em;
+        margin: 10px;
+    }
+    footer section article {
+        text-align: center;
+        margin: 20px 0px;
+    }
+    footer article p {
+        font-size: 12px;
+        margin-bottom: 40px;
+    }
+    footer {
+       border-top: 10px var(--color-gris-claro) solid
+     }
+}

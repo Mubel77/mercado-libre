@@ -17,12 +17,11 @@ main h2 {
     color: var(--color-gris-oscuro);
     text-align: center;
 }
-
 .h5_name {
     font-size: 16px;
     color: black;
     margin: 20px 0px 20px 0px;
-    display: block;
+    display: none;
 }
 main section article i {
     color: var(--color-Verde);
@@ -43,8 +42,9 @@ main section article i {
     flex-wrap: wrap;
 
 }
-.caja{ 
+.caja {
     margin-left: 20px;
+    padding-bottom: 10px;
 }
 .caja p {
     display: inline-block;
@@ -61,16 +61,36 @@ main section article i {
    padding-left: 5px;
     
 }
+/* sin sombra */
+.caja_img_1 article {
+    box-shadow: 0px 0px 0px rgb(100, 100, 100); 
+}
+/* Efecto de sombra */
+.caja_img_1 article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+}
+.fa-solid.fa-truck {
+    transition: transform 450ms ; /*transición  */
+}
+
+.fa-solid.fa-truck:hover {
+    transform: rotate(-90deg); /*Gira 90° */
+}
+
 
  @media  (min-width: 768px){
-  
-     .h5_name {
-        font-size: 20px;
-        color: black;
-        padding: 5px;
-        display: block;
-        margin-top: 10px;
-    }
+ .h5_name {
+     font-size: 20px;
+     color: black;
+     padding: 5px;
+     margin-top: 10px;
+    display: none; 
+   transition: display 450ms;
+ }
+ 
+ .center_h:hover .h5_name {
+     display: block;
+ }
     .h5_name_green {
         font-size: 20px;
         color: var(--color-Verde);
@@ -114,5 +134,17 @@ main section article i {
         color: var(--color-gris-oscuro);
         text-align: center;
         margin-top: 10px;
+    }
+    .h5_name {
+    font-size: 20px;
+    color: black;
+    padding: 5px;
+    margin-top: 10px;
+    display: none; 
+     transition: display 450ms;
+    }
+
+    .center_h:hover .h5_name {
+    display: block;
     }
 }
